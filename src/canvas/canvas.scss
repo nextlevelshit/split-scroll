@@ -1,0 +1,28 @@
+@import "../index.css";
+
+.wrapper {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+$half-width: 50%;
+
+.left,
+.right {
+  width: $half-width;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.left {
+}
+
+.right {
+}
+
+.card {
+  height: 100vh;
+}

@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "start": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html",
+    "clean": "rm -rf .cache .parcel-cache dist"
+  },
+  "dependencies": {
+    "@parcel/config-default": "^2.0.0-alpha.3",
+    "@types/react": "^16.9.49",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-use": "^15.3.4"
+  },
+  "browserslist": "> 0.2%",
+  "devDependencies": {
+    "parcel": "next",
+    "postcss-custom-properties": "^10.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-modules": "^3.2.2",
+    "postcss-url": "^8.0.0",
+    "sass": "^1.26.11",
+    "typescript": "^4.0.3"
+  }
+}
