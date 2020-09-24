@@ -1,6 +1,7 @@
 :root {
   --bg: black;
   --text: white;
+  --text-inverted: white;
 }
 
 html,

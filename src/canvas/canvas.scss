@@ -1,5 +1,12 @@
 @import "../index.css";
 
+$half-width: 50vw;
+
+@mixin inverted-card {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
 .wrapper {
   display: flex;
   position: absolute;
@@ -7,8 +14,6 @@
   width: 100%;
   overflow: hidden;
 }
-
-$half-width: 50%;
 
 .left,
 .right {
@@ -18,11 +23,24 @@ $half-width: 50%;
 }
 
 .left {
+  overflow: hidden;
+
+  .card:nth-child(odd) {
+    @include inverted-card;
+  }
 }
 
 .right {
+  .card:nth-child(even) {
+    @include inverted-card;
+  }
 }
 
 .card {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 3.1vw;
 }
