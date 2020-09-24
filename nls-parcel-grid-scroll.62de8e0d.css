@@ -1,0 +1,54 @@
+:root {
+  --bg: black;
+  --text: white;
+  --text-inverted: white;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+._wrapper_e131b {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+._left_e131b,
+._right_e131b {
+  width: 50vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+._left_e131b {
+  overflow: hidden;
+}
+
+._left_e131b ._card_e131b:nth-child(odd) {
+  background-color: black;
+  background-color: var(--bg);
+  color: white;
+  color: var(--text);
+}
+
+._right_e131b ._card_e131b:nth-child(even) {
+  background-color: black;
+  background-color: var(--bg);
+  color: white;
+  color: var(--text);
+}
+
+._card_e131b {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.1vw;
+}
+/*# sourceMappingURL=nls-parcel-grid-scroll.62de8e0d.css.map */
